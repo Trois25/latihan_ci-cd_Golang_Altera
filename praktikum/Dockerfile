@@ -5,8 +5,8 @@ FROM golang:1.20-alpine
 WORKDIR /app
 
 #copy file gomod dan gosum serta semua packet kedalam directory
-COPY go.mod ./
-COPY go.sum ./
+COPY go.mod 
+COPY go.sum 
 RUN go mod download
 
 #copy semuanya kedalam directory
