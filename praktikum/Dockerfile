@@ -6,7 +6,7 @@ WORKDIR /app
 
 #copy file gomod dan gosum serta semua packet kedalam directory
 COPY go.mod ./
-COPY go.sum ./
+# COPY go.sum ./
 RUN go mod download
 
 #copy semuanya kedalam directory
