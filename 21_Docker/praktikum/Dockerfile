@@ -11,7 +11,6 @@ RUN go mod download
 
 #copy semuanya kedalam directory
 COPY . .
-
 #build aplikasi dan define dimana output itu berada, untuk casi ini didalam tugas
 RUN go build -o /tugas
 
