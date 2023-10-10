@@ -36,6 +36,7 @@ jobs:
         file: ./praktikum/Dockerfile
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/backend_ci-cd:latest
+        
   #melakukan deploy menggunakan docker
   deploy-prod:
     runs-on: ubuntu-latest
